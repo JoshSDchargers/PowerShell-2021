@@ -1,0 +1,4 @@
+$UserList = Get-ADUser -Filter * -Properties department | 
+    Where-Object {$_.department -Like "Nursing"} | 
+        Select sAMAccountName
+Add-ADGroupMember -Identity 'AllNursing' -Members $UserList

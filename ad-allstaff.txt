@@ -1,1 +1,1 @@
-Get-ADUser -SearchBase ‘OU=Staff,OU=Users,OU=astc,DC=astc,DC=local’ -Filter * | Where-Object { ($_.DistinguishedName -notlike "*,OU=Sharedboxes,*") } | ForEach-Object {Add-ADGroupMember -Identity ‘All Staff’ -Members $_ }
+Get-ADUser -SearchBase â€˜OU=â€™ -Filter * | Where-Object { ($_.DistinguishedName -notlike "*,OU=Sharedboxes,*") } | ForEach-Object {Add-ADGroupMember -Identity â€˜All Staffâ€™ -Members $_ }

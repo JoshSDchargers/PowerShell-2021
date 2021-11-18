@@ -1,0 +1,1 @@
+﻿Get-ChildItem s:\ -r| sort -descending -property length | select -first 250 name, @{Name="MB";Expression={[Math]::round($_.length / 1MB, 2)}} , DirectoryName >> M:\IT\Reports\SdriveTop100.txt

@@ -1,14 +1,3 @@
-﻿<#
-=============================================================================================
-Name:           Microsoft 365 Admin Report
-Description:    This script exports Microsoft 365 admin role group membership to CSV
-Version:        1.0
-website:        o365reports.com
-Script by:      O365Reports Team
-For detailed Script execution: https://o365reports.com/2021/03/02/Export-Office-365-admin-role-report-powershell
-============================================================================================
-#>
-
 param ( 
 [string] $UserName = $null, 
 [string] $Password = $null, 
